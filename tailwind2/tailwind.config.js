@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./html/*"],
+  mode: 'jit',
+  content: ["./html/*","./node_modules/flowbite/**/*.js"],
   theme: {
     colors: {
       'text-light': "#190b30",
@@ -11,7 +12,8 @@ module.exports = {
     extend: {},
   },
   plugins: [
-    require('@tailwindcss/custom-forms')
+    require('@tailwindcss/custom-forms'),
+    require('flowbite/plugin')
 ],
 }
 
