@@ -6,3 +6,8 @@ const $triggerEl = document.getElementById('collapse-button');
 $triggerEl.onclick = ()=> {
     $targetEl.classList.toggle("hidden")
 }
+
+
+
+
+
