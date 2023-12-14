@@ -6,6 +6,8 @@ import Shop from './Shop.jsx'
 import Warenkorb from './Warenkorb.jsx'
 import './index.css'
 
+
+
 import {
   createBrowserRouter,
   RouterProvider,

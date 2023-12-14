@@ -1,0 +1,12 @@
+Was ich habe
+
+Einleitung und Inhaltsverzeichnis
+
+Konzeption und Ausführung der Website in einer Technologie -> Stichpunkte
+
+was fehlt->
+"Kopieren" der Website in Bootstrap, Stichpunkte dafür und Ausformulierung für Bootstrap
+
+Allgemeine Ausführungen zu Projekt und beiden Technologien
+
+Schlüsse ziehen/Fazitisierung
