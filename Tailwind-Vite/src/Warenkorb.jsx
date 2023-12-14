@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Navigation from './components/Navigation'
 import Shoe from "../../assets/shoe renders/MainRender.png"
 import CartItem from "./components/CartItem.jsx"
+import Footer from "./components/Footer.jsx"
 import toast, { Toaster } from 'react-hot-toast';
 
 
@@ -31,9 +32,10 @@ export default function Warenkorb() {
                     <CartItem title="Quantum Soar" size="39" price="68,99€" />
                     <CartItem title="Echo Mirage" size="46" price="68,99€" />
                 </div>
-                <button className="btn  mx-20 relative text-white bg-sky-700" onClick={notify}>Bestellen</button>
+                <button className="btn mx-[12.5%] w-3/4 relative text-white bg-sky-700" onClick={notify}>Bestellen</button>
                 <Toaster />
             </div>
-        </>
-    )
+            <div className='h-20'></div>
+            <Footer />
+        </>)
 }

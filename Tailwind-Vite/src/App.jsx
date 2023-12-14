@@ -9,17 +9,18 @@ function App() {
   return (
     <>
       <Navigation />
-      <div>
+      <div className='dark:bg-slate-900'>
         <div className='h-20'></div>
         <NavLink to="/shop">
-          <div className='rounded-m border-solid border-slate-400 border-y bg-sky-700 shadow-2xl pb-10'>
+          <div className='rounded-m bg-sky-700 dark:bg-opacity-25 shadow-2xl pb-10'>
             <img src={shoemain} className='max-w-[80%] py-10 relative left-[10%]' />
             <div className='text-white uppercase font-oswald font-semibold text-4xl ml-5'>Der neue coole Schuh</div>
             <button className='text-orange-400 ml-5 uppercase font-oswald font-bold text-2xl '>{`Zum Shop ▶`}</button>
           </div>
         </NavLink>
         <div className='h-32'></div>
-        <p className='ml-5 font-oswald font-bold text-4xl mb-2'>Unsere Empfehlungen</p>
+        <p className='ml-5 font-oswald font-bold text-4xl mb-2 dark:text-gray-300 '>Unsere Empfehlungen</p>
+        <div className='h-4'></div>
         <div className='overflow-x-auto pb-3 whitespace-nowrap pl-5 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:"none"] [scrollbar-width:"none"]'>
           <TrendCard title="Doballo X Pro" category="Herrenschuh" price="59,99€" />
           <TrendCard title="Doballo X Pro" category="Frauenschuh" price="99,99€" originalprice="129,99€" />

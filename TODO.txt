@@ -1,0 +1,4 @@
+-About überarbeiten
+-Warenkorb überarbeiten
+bei beidem Dark Mode
+alles responsive

@@ -9,8 +9,8 @@ export default function Navigation() {
         (showMenu == "hidden") ? setShowMenu("") : setShowMenu("hidden")
     }
     return (
-        <nav className="bg-white border-gray-800 shadow-md dark:bg-gray-900 font-oswald">
-            <div className="max-w-screen-xl flex flex-wrap items-center justify-between ml-0 mr-0 p-4">
+        <nav className="bg-white dark:bg-gray-900 shadow-md font-oswald">
+            <div className="max-w-screen-xl flex flex-wrap items-center justify-between ml-0 mr-0 p-4 border-b-2 border-gray-400">
                 <NavLink to="/" className="flex items-center space-x-3 ">
                     <img src={logo} className="h-8" alt="Doballo Logo" />
                     <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white font-oswald">Doballo</span>
@@ -26,22 +26,22 @@ export default function Navigation() {
                 <div className={(showMenu) + " w-full md:block md:w-auto id='navbar-default' "}>
                     <ul className="navbar-top">
                         <li>
-                            <NavLink to="/" className={({ isActive }) => (isActive ? 'text-red-700' : 'text-gray-900') + " block py-2 px-3 aria-  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"}>
+                            <NavLink to="/" className={({ isActive }) => (isActive ? 'text-orange-400 dark:text-orange-400' : 'text-gray-900') + " block py-2 px-3 rounded hover:bg-gray-300  hover:text-orange-600 dark:text-white dark:hover:bg-gray-700 dark:hover:text-orange-600 md:dark:hover:bg-gray-700"}>
                                 Home
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/about" className={({ isActive }) => (isActive ? 'text-red-700' : 'text-gray-900') + " block py-2 px-3 aria-  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"}>
+                            <NavLink to="/about" className={({ isActive }) => (isActive ? 'text-orange-400 dark:text-orange-400' : 'text-gray-900') + " block py-2 px-3 rounded hover:bg-gray-300  hover:text-orange-600 dark:text-white dark:hover:bg-gray-700 dark:hover:text-orange-600 md:dark:hover:bg-gray-700"}>
                                 About
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/shop" className={({ isActive }) => (isActive ? 'text-red-700' : 'text-gray-900') + " block py-2 px-3 aria-  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"}>
+                            <NavLink to="/shop" className={({ isActive }) => (isActive ? 'text-orange-400 dark:text-orange-400' : 'text-gray-900') + " block py-2 px-3 rounded hover:bg-gray-300  hover:text-orange-600 dark:text-white dark:hover:bg-gray-700 dark:hover:text-orange-600 md:dark:hover:bg-gray-700"}>
                                 Shop
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/warenkorb" className={({ isActive }) => (isActive ? 'text-red-700' : 'text-gray-900') + " block py-2 px-3 aria-  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"}>
+                            <NavLink to="/warenkorb" className={({ isActive }) => (isActive ? 'text-orange-400 dark:text-orange-400' : 'text-gray-900') + " block py-2 px-3 rounded hover:bg-gray-300  hover:text-orange-600 dark:text-white dark:hover:bg-gray-700 dark:hover:text-orange-600 md:dark:hover:bg-gray-700"}>
                                 Warenkorb
                             </NavLink>
                         </li>
