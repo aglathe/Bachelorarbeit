@@ -1,4 +1,4 @@
--About überarbeiten
--Warenkorb überarbeiten
-bei beidem Dark Mode
-alles responsive
+animationen/transitions
+
+dark mode überall überprüfen
+responsive überprüfen

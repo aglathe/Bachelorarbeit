@@ -1,33 +1,29 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import About from './About.jsx'
-import Shop from './Shop.jsx'
-import Warenkorb from './Warenkorb.jsx'
-import './index.css'
-
-
 
 import {
   createBrowserRouter,
   RouterProvider,
-} from "react-router-dom"
+} from 'react-router-dom'
+
+import App from './pages/Home.jsx'
+import Shop from './pages/Shop.jsx'
+import Warenkorb from './pages/Warenkorb.jsx'
+import './index.css'
+
+
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <App />
   },
   {
-    path: "about/",
-    element: <About />
-  },
-  {
-    path: "shop",
+    path: 'shop',
     element: <Shop />
   },
   {
-    path: "warenkorb",
+    path: 'warenkorb',
     element: <Warenkorb />
   }
 ])
