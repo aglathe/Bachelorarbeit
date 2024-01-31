@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Footer() {
     return (
-        <div className=' font-oswald pl-5 border-t-2 border-solid border-sky-700 grid-cols-1 grid md:grid-cols-2'>
+        <div className=' font-oswald ps-5 border-t-2 border-solid border-sky-700 grid-cols-1 grid md:grid-cols-2'>
             <div className='inline'>
                 <ul>
                     <li className='py-2'>

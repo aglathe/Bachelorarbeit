@@ -1,4 +1,10 @@
-animationen/transitions
+-> Home fertig
+->Shop fertig
 
-dark mode überall überprüfen
-responsive überprüfen
+-Warenkorb
+einfaches Design
+Toast
+
+
+alles in Darkmode
+WARUM SCROLLBAR UNTEN

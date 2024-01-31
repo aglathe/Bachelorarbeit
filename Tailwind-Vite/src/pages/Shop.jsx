@@ -62,7 +62,7 @@ export default function Shop() {
                     </ul>
                 </div>
                 <div className='h-10 border-t-4 border-solid border-sky-700'></div>
-                <div className='grid grid-cols-2 place-items-center gap-3 pl-4 pr-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-12'>
+                <div className='grid grid-cols-2 place-items-center gap-3 pl-4 pr-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6'>
                     <ShopGridElement title='Velocity' category='Herrenschuhe' numofcol='4' price='89.99€' />
                     <ShopGridElement title='Quantum Soar' category='Wanderschuhe' numofcol='3' price='109.99€' />
                     <ShopGridElement title='Echo Mirage' category='Frauenschuhe' numofcol='5' price='94.99€' oldprice='114.99€' />
