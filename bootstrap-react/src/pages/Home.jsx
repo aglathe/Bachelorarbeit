@@ -5,33 +5,38 @@ import Shoe from '../assets/render/MainRender.png'
 import TrendCard from '../components/TrendCard.jsx'
 import Footer from '../components/Footer.jsx'
 
-import { Container, Button, CardBody } from 'react-bootstrap'
+import { Container, Row, Col } from 'react-bootstrap'
 
 export default function Home() {
     return (
         <div>
             <Navigation />
-            <Container style={{ height: '6rem' }}></Container>
-            <div id="presentingsquare" width="100%" className='shadow-lg mx-0 px-0 d-flex flex-row'>
-                <div className='d-flex flex-column justify-content-center ps-5'>
-                    <img src={Shoe} width="75%" style={{ maxWidth: '80%' }}></img>
-                    <div className='text-white fw-bolder ps-2 mt-3'
-                        style={{
-                            fontSize: '2.25rem',
-                            lineHeight: '2.5rem'
-                        }}>DER NEUE COOLE SCHUH</div>
-                    <div className='text-warning ps-2 text-uppercase fw-bold pb-5' style={{
-                        fontSize: '1.5rem',
-                        lineHeight: '2rem'
-                    }}>Zum Shop</div>
-                </div>
-                <div className='d-none d-md-flex'> Mehr Informationen </div>
-            </div >
-            <Container style={{ height: '8rem' }}></Container>
-            <Container className="text-uppercase fw-bold  mb-3 ps-2" style={{
-                fontSize: '2rem',
-                lineHeight: '4rem'
-            }}>
+            <Container id="spacer"></Container>
+            <Container fluid id="presentingsquare" className='bg-secondary shadow-lg w-100 mx-0 px-0 d-flex flex-row overflow-x-hidden'>
+                <Row className='ps-5'>
+                    <Col xs={12} md={6}>
+                        <img src={Shoe} width="75%" className='mw-80'></img>
+                        <div className='text-light fw-bolder ps-2 mt-3'>
+                            DER NEUE COOLE SCHUH
+                        </div>
+                        <div className='text-primary ps-2 text-uppercase fw-bold pb-5 display-5'>Zum Shop</div>
+                    </Col>
+                    <Col md={6} className='d-none d-md-flex flex-column '>
+                        <Row className=' gy-5'>
+                            <Col md={12} className=''><div className='text-light'>Komfort und Stil <div className='text-primary d-inline'>neu definiert</div></div></Col>
+                            <Col md={12} className=''><div className='text-light'>Bahnbrechende <div className='text-primary d-inline'>ergonomische</div> Sohlentechnologie</div></Col>
+                            <Col md={12} className=''><div className='text-light'>Atmungsaktives Design für den <div className='text-primary d-inline'>ganzen Tag</div></div></Col>
+                            <Col md={12} className=''><div className='text-light'>Balance zwischen <div className='text-primary d-inline'>Flexibilität</div> und <div className='text-primary d-inline'>Strapazierfähigkeit</div></div></Col>
+                        </Row>
+
+
+
+                    </Col>
+                </Row>
+
+            </Container >
+            <Container id="spacer"></Container>
+            <Container className="text-uppercase fw-bold  mb-3 ps-2 display-3">
                 Unsere Empfehlungen
             </Container>
             <Container id="CardContainer" fluid className="d-flex flex-row flex-nowrap overflow-y-hidden overflow-x-scroll" style={{ backgroundColor: 'rgba(0, 0, 0, 0)', marginBottom: '4rem', paddingBottom: '2rem' }}>
@@ -42,7 +47,7 @@ export default function Home() {
                 <TrendCard title='Doballo X Pro' category='Schuh des Manitu' price='199,99€' />
                 <TrendCard title='Doballo X Pro' category='Schlittschuh' price='257,99€' originalprice='299,99€' />
             </Container>
-            <Container style={{ height: '8rem' }}></Container>
+            <Container id="spacer"></Container>
             <Footer />
         </div >
     )

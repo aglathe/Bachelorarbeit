@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 
-import './index.css'
+
 
 import {
     createBrowserRouter,
@@ -12,7 +12,8 @@ import App from './pages/Home.jsx'
 import Shop from './pages/Shop.jsx'
 import Warenkorb from './pages/Warenkorb.jsx'
 
-
+import './index.css'
+import './custom.css'
 
 const router = createBrowserRouter([
     {
@@ -28,6 +29,8 @@ const router = createBrowserRouter([
         element: <Warenkorb />
     }
 ])
+
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>

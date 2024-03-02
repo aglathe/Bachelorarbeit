@@ -10,14 +10,8 @@
     border-color: rgba(0, 0, 0, 0);
 }
 
-#presentingsquare {
-    background-color: #0369A1;
-}
-
-#discount {
-    text-decoration-color: #fb923c;
-    text-decoration-thickness: 2px;
-    text-decoration-line: line-through;
+#spacer {
+    height: 8rem;
 }
 
 #CardContainer {
@@ -27,8 +21,4 @@
 
 #CardContainer::-webkit-scrollbar {
     display: none;
-}
-
-.ShopImages {
-    width: 75% !important;
 }

@@ -9,7 +9,10 @@ export default {
       oswald: ["Oswald", "sans-serif"],
     },
 
-    extend: {},
+    extend: {
+      
+
+    },
   },
   plugins: [require("daisyui")],
 }

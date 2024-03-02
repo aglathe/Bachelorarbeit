@@ -3,22 +3,18 @@ import Navigation from '../components/Navigation.jsx'
 import ShopGridElement from '../components/ShopGridElement.jsx'
 import Shoe from '../assets/render/MainRender.png'
 import Footer from '../components/Footer.jsx'
-import { Carousel, Row, Col, Container } from 'react-bootstrap'
+import { Carousel, Row, Container } from 'react-bootstrap'
 
 export default function Shop() {
     return (
         <>
             <Navigation />
             <div>
-                <div style={{ height: '40px' }}></div>
-                <p className='ms-5 mb-5' style={{
-                    fontSize: '2.25rem',
-                    lineHeight: '2.5rem',
-                    fontWeight: '700'
-                }}>Die Besten der Besten</p>
+                <Container id="spacer"></Container>
+                <p className='ms-5 mb-5 display-3 fw-bolder'>Die Besten der Besten</p>
                 <div className='h-10'></div>
                 <div className='d-flex justify-content-center'>
-                    <Carousel data-bs-theme="dark" style={{ width: '75%' }} className=''>
+                    <Carousel data-bs-theme="dark" className='w-75'>
                         <Carousel.Item >
                             <img src={Shoe} width="65%" style={{ marginLeft: '8rem' }} />
                         </Carousel.Item>
@@ -33,22 +29,18 @@ export default function Shop() {
                         </Carousel.Item>
                     </Carousel>
                 </div>
-                <div style={{ height: '5rem' }}></div>
-                <p className='ms-4' style={{
-                    fontSize: '2.25rem',
-                    fontWeight: '500',
-                    marginBottom: '0px'
-                }}>Kategorien</p>
-                <div className='ms-4 d-flex flex-row pb-3'>
-                    <div className='me-3'>Herren</div>
-                    <div className='me-3'>Damen</div>
-                    <div className='me-3'>Kinder</div>
-                    <div className='me-3'>Wanderschuhe</div>
-                </div>
+                <Container id="spacer"></Container>
+                <p className='ms-4 display-5 fw-bold'>Kategorien</p>
+                <Container className='ms-4 d-flex flex-row pb-3 '>
+                    <Container className='me-3'>Herren</Container>
+                    <Container className='me-3'>Damen</Container>
+                    <Container className='me-3'>Kinder</Container>
+                    <Container className='me-3'>Wanderschuhe</Container>
+                </Container>
 
-                <div className='border-t-4 border-solid border-sky-700' style={{ height: '2.5rem', borderWidth: '0px', borderTopWidth: '5px', borderStyle: 'solid', borderColor: '#0369a1' }}></div>
-                <div className='d-flex justify-content-center'>
-                    <div style={{ width: '90%', }}>
+                <Container fluid className='border-top border-secondary border-5 mb-5'></Container>
+                <Container className='d-flex justify-content-center'>
+                    <Container width="90%">
                         <Row>
                             <ShopGridElement title='Velocity' category='Herrenschuhe' numofcol='4' price='89.99€' />
                             <ShopGridElement title='Quantum Soar' category='Wanderschuhe' numofcol='3' price='109.99€' />
@@ -76,9 +68,9 @@ export default function Shop() {
                             <ShopGridElement title='Echo Mirage' category='Herrenschuhe' numofcol='4' price='114.99€' />
                             <ShopGridElement title='Velocity' category='Frauenschuhe' numofcol='5' price='104.99€' oldprice='124.99€' />
                         </Row>
-                    </div>
-                </div>
-                <div className='h-32'></div>
+                    </Container>
+                </Container>
+                <Container id="spacer"></Container>
                 <Footer />
 
 
